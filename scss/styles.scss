@@ -1,0 +1,76 @@
+.header {
+    background: #151515 url(../images/alt-bg\ \(1\).jpeg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.header .text-container {
+    z-index: 1000;
+    transform: translateY(-10%);
+}
+
+.header .roles {
+    font-family: 'lora-regular', sans-serif;
+}
+
+.header .social {
+    bottom: 50px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.services {
+    background: url(../images/bg1.jpeg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.services .container {
+    z-index: 1000;
+}
+
+@media(max-width:767px) {
+    .header .social i {
+        font-size: 30px;
+    }
+
+    .header .roles {
+        font-size: 18px !important;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats .stat {
+        border-right: none !important;
+        margin-bottom: 40px;
+        border-bottom: solid 1px var(--bs-dark);
+        padding-bottom: 20px;
+    }
+}
